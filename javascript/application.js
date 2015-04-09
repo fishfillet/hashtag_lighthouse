@@ -38,14 +38,15 @@ $(function () {
     }; //nexterustlstlst
 
     function slideShow(response){
-        $('.show-image').attr('src', slideshow[index].images.standard_resolution.url);
-        $('.show-caption').text(slideshow[index].caption.text);
         if (index > slideshow.length){
             nextResults(response);
         }else{
             index++;
-            setTimeout(slideShow, 5000, response);
+            setTimeout(slideShow, 10000, response);
         }
+        $('.show-image').attr('src', slideshow[index].images.standard_resolution.url);
+        $('.show-caption').text(slideshow[index].caption.text);
+        $('.link-image').attr('href', slideshow[index].link)
     };
 });
 
