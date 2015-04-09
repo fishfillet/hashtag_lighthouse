@@ -43,9 +43,7 @@ $(function () {
             nextResults(response);
         }else{
             index++;
-            setTimeout(slideShow, 900, response);
+            setTimeout(slideShow, 5000, response);
         }
     };
-
-
 });
