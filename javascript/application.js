@@ -42,10 +42,16 @@ $(function () {
             nextResults(response);
         }else{
             index++;
-            setTimeout(slideShow, 10000, response);
+            setTimeout(slideShow, 7000, response);
         }
-        $('.show-image').attr('src', slideshow[index].images.standard_resolution.url);
-        $('.show-caption').text(slideshow[index].caption.text);
+        $('.show-image').fadeOut('slow', function(){
+            $('.show-image').attr('src', slideshow[index].images.standard_resolution.url).fadeIn();
+        });
+        
+        $('.show-caption').fadeOut('slow', function(){
+            $('.show-caption').text(slideshow[index].caption.text).fadeIn();
+        });
+        
         $('.link-image').attr('href', slideshow[index].link)
     };
 });
