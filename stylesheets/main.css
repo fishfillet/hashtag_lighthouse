@@ -1,0 +1,27 @@
+html{
+  height: 100%;
+  font-size: 1rem;
+  background-color: gray;
+  font-family: futura-pt,futura-heavy,"Helvetica Neue",
+  Helvetica,Arial,sans-serif;
+}
+
+body{
+  margin: 0;
+  color: black;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+*,
+*:after,
+*:before {
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
